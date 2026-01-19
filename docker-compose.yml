@@ -1,0 +1,21 @@
+services:
+  raga-backend:
+    init: true
+    build: ./backend
+    container_name: raga-backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8080:8080"
+    restart: always
+
+  raga-ui:
+    build:
+      context: ./frontend
+    container_name: raga-ui
+    ports:
+      - "80:80"
+    depends_on:
+      - raga-backend
+    restart: always
+

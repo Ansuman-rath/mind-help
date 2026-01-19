@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/enso.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Help</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- n8n Chat Widget -->
+<link
+  href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+  rel="stylesheet"
+/>
+
+<script type="module">
+  import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+  createChat({
+    webhookUrl: "https://avv.app.n8n.cloud/webhook/49b9cc9b-4eb4-4c32-8a2a-2fe139e28f9f/chat"
+  });
+</script>
+
+
+  </body>
+</html>
