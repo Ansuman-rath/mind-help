@@ -2,6 +2,8 @@
 
 MindHelp is a **cloud-based mental health support platform** built using the MERN stack. It helps users track their mental well-being, monitor sleep and mood patterns, and interact with an **AI-powered therapist chatbot**.
 
+![MindHelp](./mindhelp.jpeg)
+
 
 ---
 
